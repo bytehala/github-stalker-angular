@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
+A programming challenge for (company redacted until they grant permission).
+
+## Purpose
+
+- Use the GitHub API to quickly show the repos starred by a specific user
+
+Stretch Goals:
+- Use Amazon Comprehend (An NLP API) to extract keywords from the descriptions of a user's starred repos, as well as their own repos to generate (maybe) a word cloud to easily glean their programming interests
+- Github auth
+- A better UI 😢 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
