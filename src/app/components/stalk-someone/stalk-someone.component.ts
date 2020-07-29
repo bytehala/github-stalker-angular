@@ -14,10 +14,10 @@ export class StalkSomeoneComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.data = 'blablabla';
     this.githubApiService.getStarred().subscribe(
       data => {
-        console.log(data);
+        console.log(data[0]);
+        this.data = data[0].name;
       },
       err => console.error(err),
       () => console.log('done loading foods')
