@@ -20,7 +20,7 @@ export class StalkSomeoneComponent implements OnInit {
         this.data = data[0].name;
       },
       err => console.error(err),
-      () => console.log('done loading foods')
+      () => console.log('done')
     );
   }
 
