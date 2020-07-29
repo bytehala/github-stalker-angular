@@ -9,9 +9,9 @@ export class GithubApiService {
   constructor(private http: HttpClient) {}
 
   // Uses http.get() to load data from a single API endpoint
-  getStarred(): Observable<GithubRepoModel[]> {
+  getStarred(user: string): Observable<GithubRepoModel[]> {
     console.log('getStarred');
-    return this.http.get<GithubRepoModel[]>('https://api.github.com/users/bytehala/starred');
+    return this.http.get<GithubRepoModel[]>('https://api.github.com/users/' + user + '/starred');
   }
 
 }

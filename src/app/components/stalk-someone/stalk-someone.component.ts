@@ -14,7 +14,7 @@ export class StalkSomeoneComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.githubApiService.getStarred().subscribe(
+    this.githubApiService.getStarred('zerojuan').subscribe(
       data => {
         console.log(data[0]);
         this.data = data[0].name;
