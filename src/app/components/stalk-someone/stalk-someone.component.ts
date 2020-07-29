@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {GithubApiService} from '../../services/github-api.service';
 import {ActivatedRoute} from '@angular/router';
+import {GithubRepoModel} from '../../shared/models/github-repo.model';
 
 @Component({
   selector: 'app-stalk-someone',
@@ -9,7 +10,8 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class StalkSomeoneComponent implements OnInit {
 
-  private data = '';
+  private message;
+  private data: GithubRepoModel[] = '';
 
   constructor(
     private route: ActivatedRoute,
@@ -21,15 +23,15 @@ export class StalkSomeoneComponent implements OnInit {
       // .filter(params => params.order)
       .subscribe(params => {
           console.log(params); // { order: "popular" }
-
+          this.message = 'Stalking ' + params.user;
           this.githubApiService.getStarred(params.user).subscribe(
             data => {
               console.log(data[0]);
-              this.data = data[0].name;
+              this.data = data;
             },
             err => {
               console.error(err);
-              this.data = 'User not found';
+              this.message = 'User not found: ' + params.user;
             },
             () => console.log('done')
           );
