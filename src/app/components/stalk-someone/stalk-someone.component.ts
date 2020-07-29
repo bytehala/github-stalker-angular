@@ -9,7 +9,7 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class StalkSomeoneComponent implements OnInit {
 
-  private data = 'testData';
+  private data = '';
 
   constructor(
     private route: ActivatedRoute,
