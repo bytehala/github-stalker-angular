@@ -11,7 +11,7 @@ import {GithubRepoModel} from '../../shared/models/github-repo.model';
 export class StalkSomeoneComponent implements OnInit {
 
   private message;
-  private data: GithubRepoModel[] = '';
+  private data: GithubRepoModel[] = [];
 
   constructor(
     private route: ActivatedRoute,
