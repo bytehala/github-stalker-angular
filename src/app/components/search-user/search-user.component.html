@@ -1,3 +1,5 @@
-<p>
-  search-user works!
-</p>
+<form (submit)="search()" role="search">
+  <label for="search">Enter GitHub username</label>
+  <input id="search" type="search" placeholder="Search..." autofocus required />
+  <button type="submit">Go</button>
+</form>
