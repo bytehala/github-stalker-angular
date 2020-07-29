@@ -3,16 +3,21 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { StalkSomeoneComponent } from './components/stalk-someone/stalk-someone.component';
+import {GithubApiService} from './services/github-api.service';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StalkSomeoneComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GithubApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
