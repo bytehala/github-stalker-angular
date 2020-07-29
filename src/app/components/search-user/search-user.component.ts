@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-search-user',
@@ -7,13 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchUserComponent implements OnInit {
 
+  searchFormGroup = new FormGroup({
+    userName: new FormControl(''),
+    // lastName: new FormControl(''),
+  });
   constructor() { }
 
   ngOnInit() {
   }
 
   search() {
-    console.log('Searching');
+    console.log('searching', this.searchFormGroup.controls['userName'].value);
   }
 
 }
