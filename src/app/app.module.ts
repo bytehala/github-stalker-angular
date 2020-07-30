@@ -11,6 +11,7 @@ import {AppRoutingModule} from './app-routing/app-routing.module';
 import {ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import { HeaderComponent } from './header/header/header.component';
+import { RepositoryCardComponent } from './components/repository-card/repository-card.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header/header.component';
     AppComponent,
     StalkSomeoneComponent,
     SearchUserComponent,
-    HeaderComponent
+    HeaderComponent,
+    RepositoryCardComponent
   ],
   imports: [
     BrowserModule,

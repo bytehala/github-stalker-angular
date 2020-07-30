@@ -1,10 +1,16 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {HeaderComponent} from './header/header/header.component';
+import {StalkSomeoneComponent} from './components/stalk-someone/stalk-someone.component';
+import {SearchUserComponent} from './components/search-user/search-user.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        HeaderComponent,
+        StalkSomeoneComponent,
+        SearchUserComponent
       ],
     }).compileComponents();
   }));
