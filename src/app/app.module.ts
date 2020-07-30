@@ -9,6 +9,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { SearchUserComponent } from './components/search-user/search-user.component';
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {ReactiveFormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import {ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    RouterModule,
     ReactiveFormsModule,
   ],
   providers: [GithubApiService],

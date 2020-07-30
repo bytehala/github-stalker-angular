@@ -1,7 +1,13 @@
 <!--  stalk-someone works! -->
 <p>{{message}}</p>
-<ul class="heroes">
-  <li *ngFor="let d of data">
-    {{d.name}}
-  </li>
-</ul>
+<div id="wrapper">
+  <ul>
+    <li *ngFor="let d of data">
+      {{d.name}}
+      <ul>
+        <li>{{d.description}}</li>
+      </ul>
+      <br/>
+    </li>
+  </ul>
+</div>
