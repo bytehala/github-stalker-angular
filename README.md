@@ -1,8 +1,10 @@
 # GithubStalkerAngular [![Build Status](https://travis-ci.com/bytehala/github-stalker-angular.svg?branch=master)](https://travis-ci.com/bytehala/github-stalker-angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
-
 A programming challenge for (company redacted until they grant permission).
+
+The "submission" state of this project is at https://github.com/bytehala/github-stalker-angular/tree/v1.0-SNAPSHOT
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Purpose
 

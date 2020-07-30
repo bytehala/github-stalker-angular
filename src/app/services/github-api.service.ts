@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {GithubRepoModel} from '../shared/models/github-repo.model';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs/internal/Observable';
 
 @Injectable()
 export class GithubApiService {
