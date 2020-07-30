@@ -22,19 +22,20 @@ export class StalkSomeoneComponent implements OnInit {
     this.route.queryParams
       // .filter(params => params.order)
       .subscribe(params => {
-          console.log(params); // { order: "popular" }
           this.message = 'Stalking ' + params.user;
-          this.githubApiService.getStarred(params.user).subscribe(
-            data => {
-              console.log(data[0]);
-              this.data = data;
-            },
-            err => {
-              console.error(err);
-              this.message = 'User not found: ' + params.user;
-            },
-            () => console.log('done')
-          );
+          if (params.user) {
+            this.githubApiService.getStarred(params.user).subscribe(
+              data => {
+                console.log(data[0]);
+                this.data = data;
+              },
+              err => {
+                console.error(err);
+                this.message = 'User not found: ' + params.user;
+              },
+              () => console.log('done')
+            );
+          }
 
         }
       );
