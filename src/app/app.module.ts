@@ -10,13 +10,15 @@ import { SearchUserComponent } from './components/search-user/search-user.compon
 import {AppRoutingModule} from './app-routing/app-routing.module';
 import {ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
+import { HeaderComponent } from './header/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     StalkSomeoneComponent,
-    SearchUserComponent
+    SearchUserComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
