@@ -1,17 +1,7 @@
 <!--  stalk-someone works! -->
 <p>{{message}}</p>
 <div id="wrapper">
-<!--  <app-repository-card></app-repository-card>-->
-
   <div *ngFor="let d of data" class="mt-5">
-    <app-repository-card></app-repository-card>
+    <app-repository-card [title]="d.name" [description]="d.description"></app-repository-card>
   </div>
-<!--    <li *ngFor="let d of data">-->
-<!--      {{d.name}}-->
-<!--      <ul>-->
-<!--        <li>{{d.description}}</li>-->
-<!--      </ul>-->
-<!--      <br/>-->
-<!--    </li>-->
-<!--  </div>-->
 </div>
