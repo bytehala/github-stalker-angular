@@ -1,7 +1,12 @@
-<form (submit)="search()" role="search" [formGroup]="searchFormGroup">
-  <label for="userName">Enter GitHub username</label>
-  <input id="userName" type="search" placeholder="Search..." autofocus required
-         formControlName="userName"
-  />
-  <button type="submit">Go</button>
-</form>
+<div class="wrapper">
+    <div class="jumbotron">
+
+      <form (submit)="search()" role="search" [formGroup]="searchFormGroup">
+        <label for="userName">Enter GitHub username</label>
+        <input id="userName" type="search" placeholder="Search..." autofocus required
+               formControlName="userName"
+        />
+        <button type="submit">Go</button>
+      </form>
+    </div>
+</div>
