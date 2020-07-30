@@ -1,4 +1,4 @@
-# GithubStalkerAngular
+# GithubStalkerAngular [![Build Status](https://travis-ci.com/bytehala/github-stalker-angular.svg?branch=master)](https://travis-ci.com/bytehala/github-stalker-angular)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
